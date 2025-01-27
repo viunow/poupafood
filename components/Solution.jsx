@@ -1,58 +1,107 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Image from "next/image";
+import img1 from "../public/1.jpg";
+import img2 from "../public/2.jpg";
+import img3 from "../public/3.jpg";
+
 export default function Solution() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <section id="solution" className="bg-white py-12 px-4 md:px-8">
-      <h2 className="text-2xl md:text-4xl font-bold text-darkTeal text-center">
-        Nossa Solução
-      </h2>
-      <p className="mt-6 text-gray-700 max-w-3xl mx-auto text-center">
-        A PoupaFood é uma plataforma inovadora que conecta estabelecimentos com
-        excedentes de alimentos a consumidores conscientes, oferecendo
-        benefícios econômicos, sociais e ambientais.
-      </p>
-      <div className="mt-8 grid gap-8 md:grid-cols-3">
-        <div className="bg-offWhite shadow-md rounded-lg p-6">
-          <h3 className="text-lg font-bold text-orange">
-            Cadastro dos Parceiros
-          </h3>
-          <p className="mt-4 text-sm text-gray-600">
-            Estabelecimentos listam seus excedentes alimentares diretamente no
-            app.
-          </p>
+    <section
+      id="solution"
+      className="min-h-screen py-20 flex flex-col items-center justify-center gap-8 bg-white text-white"
+    >
+      <div className="max-w-7xl mx-auto px-4 text-center">
+        <h2
+          className="text-4xl md:text-6xl font-bold mb-6 text-dark"
+          data-aos="fade-up"
+        >
+          Nossa Solução
+        </h2>
+        <p
+          className="text-xl mb-12 text-dark"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          PoupaFood conecta estabelecimentos com excedentes de alimentos a
+          consumidores conscientes, oferecendo benefícios econômicos, sociais e
+          ambientais.
+        </p>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div
+            className="bg-[#0b2621] rounded-lg shadow-lg transition-transform duration-500 transform hover:scale-[1.02]"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <Image
+              src={img1.src}
+              alt="Cadastro dos Parceiros"
+              width={400}
+              height={64}
+              className="mx-auto"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-[#f68824]">
+                Cadastro dos Parceiros
+              </h3>
+              <p>Estabelecimentos listam seus excedentes diretamente no app.</p>
+            </div>
+          </div>
+          <div
+            className="bg-[#0b2621] rounded-lg shadow-lg transition-transform duration-500 transform hover:scale-[1.02]"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <Image
+              src={img2.src}
+              alt="Ofertas Visíveis"
+              width={400}
+              height={64}
+              className="mx-auto"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-[#f68824]">
+                Ofertas Visíveis
+              </h3>
+              <p>Produtos excedentes são oferecidos a preços reduzidos.</p>
+            </div>
+          </div>
+          <div
+            className="bg-[#0b2621] rounded-lg shadow-lg transition-transform duration-500 transform hover:scale-[1.02]"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            <Image
+              src={img3.src}
+              alt="Compra e Retirada"
+              width={400}
+              height={64}
+              className="mx-auto"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold text-[#f68824]">
+                Compra e Retirada
+              </h3>
+              <p>O consumidor adquire o produto pelo app e retira no local.</p>
+            </div>
+          </div>
         </div>
-        <div className="bg-offWhite shadow-md rounded-lg p-6">
-          <h3 className="text-lg font-bold text-orange">Ofertas Visíveis</h3>
-          <p className="mt-4 text-sm text-gray-600">
-            Produtos excedentes são oferecidos a preços reduzidos para
-            consumidores cadastrados.
-          </p>
-        </div>
-        <div className="bg-offWhite shadow-md rounded-lg p-6">
-          <h3 className="text-lg font-bold text-orange">
-            Compra e Retirada Simples
-          </h3>
-          <p className="mt-4 text-sm text-gray-600">
-            O consumidor adquire o produto pelo app e retira diretamente no
-            estabelecimento.
-          </p>
-        </div>
+        <blockquote
+          className="w-full py-36 text-center text-5xl font-bold text-dark px-20"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+        >
+          “Um futuro onde o desperdício não é uma opção, mas uma oportunidade
+          para criar valor e cuidar do planeta.”
+        </blockquote>
       </div>
-      <h3 className="mt-12 text-xl font-bold text-darkTeal text-center">
-        Benefícios da PoupaFood
-      </h3>
-      <ul className="mt-6 space-y-4 max-w-xl mx-auto text-left">
-        <li className="text-gray-700">
-          <strong>Para os Estabelecimentos:</strong> Gera receita adicional,
-          reduz desperdício e melhora a imagem pública.
-        </li>
-        <li className="text-gray-700">
-          <strong>Para os Consumidores:</strong> Produtos de qualidade com
-          descontos e participação na redução de desperdícios.
-        </li>
-        <li className="text-gray-700">
-          <strong>Para o Planeta:</strong> Redução de resíduos e emissões de CO₂
-          associadas ao desperdício alimentar.
-        </li>
-      </ul>
     </section>
   );
 }
