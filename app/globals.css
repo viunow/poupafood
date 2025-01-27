@@ -7,3 +7,13 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+
+/* .scroll-section {
+  opacity: 0.5;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.scroll-section.active {
+  opacity: 1;
+  transform: scale(1.05);
+} */
