@@ -26,7 +26,7 @@ export default function About() {
         data-aos-delay="400"
       >
         <h2 className="text-4xl md:text-6xl font-bold text-dark text-center">
-          Sobre a
+          Sobre o
         </h2>
         <div className="text-4xl md:text-6xl font-bold flex flex-row items-center">
           <h2 className="text-dark drop-shadow-2xl">Poupa</h2>
@@ -38,7 +38,7 @@ export default function About() {
         data-aos="fade-up"
         data-aos-delay="600"
       >
-        Nossa missão é transformar desperdício em oportunidade. A PoupaFood
+        Nossa missão é transformar desperdício em oportunidade. PoupaFood
         conecta fabricantes e atacadistas do setor alimentício com consumidores
         conscientes, oferecendo uma solução inteligente para o excedente de
         alimentos.

@@ -4,8 +4,11 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import img1 from "../public/1.jpg";
+import img2 from "../public/2.jpg";
+import img3 from "../public/3.jpg";
 
-export default function Solution({ img1, img2, img3 }) {
+export default function Solution() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -27,7 +30,7 @@ export default function Solution({ img1, img2, img3 }) {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          A PoupaFood conecta estabelecimentos com excedentes de alimentos a
+          PoupaFood conecta estabelecimentos com excedentes de alimentos a
           consumidores conscientes, oferecendo benefícios econômicos, sociais e
           ambientais.
         </p>
