@@ -18,9 +18,9 @@ export default function Navbar({ logo }) {
             Solução
           </a>
         </nav>
-        <button className="bg-[#f68824] hover:bg-[#d76911] text-white px-4 py-2 rounded-lg md:hidden">
+        {/* <button className="bg-[#f68824] hover:bg-[#d76911] text-white px-4 py-2 rounded-lg md:hidden">
           Menu
-        </button>
+        </button> */}
       </div>
     </nav>
   );

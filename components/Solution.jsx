@@ -34,18 +34,19 @@ export default function Solution() {
           consumidores conscientes, oferecendo benefícios econômicos, sociais e
           ambientais.
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
           <div
             className="bg-[#0b2621] rounded-lg shadow-lg transition-transform duration-500 transform hover:scale-[1.02]"
             data-aos="zoom-in"
             data-aos-delay="400"
           >
             <Image
-              src={img1.src}
+              src={img1}
               alt="Cadastro dos Parceiros"
+              layout="responsive"
               width={400}
-              height={64}
-              className="mx-auto"
+              height={300} // Ajuste a proporção das imagens
+              className="mx-auto object-cover"
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#f68824]">
@@ -60,11 +61,12 @@ export default function Solution() {
             data-aos-delay="600"
           >
             <Image
-              src={img2.src}
+              src={img2}
               alt="Ofertas Visíveis"
+              layout="responsive"
               width={400}
-              height={64}
-              className="mx-auto"
+              height={300} // Ajuste a proporção das imagens
+              className="mx-auto object-cover"
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#f68824]">
@@ -79,11 +81,12 @@ export default function Solution() {
             data-aos-delay="800"
           >
             <Image
-              src={img3.src}
+              src={img3}
               alt="Compra e Retirada"
+              layout="responsive"
               width={400}
-              height={64}
-              className="mx-auto"
+              height={300} // Ajuste a proporção das imagens
+              className="mx-auto object-cover"
             />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-[#f68824]">
@@ -94,7 +97,7 @@ export default function Solution() {
           </div>
         </div>
         <blockquote
-          className="w-full py-36 text-center text-5xl font-bold text-dark px-20"
+          className="w-full py-28 lg:py-36 text-center text-4xl lg:text-5xl font-bold text-dark px-8 lg:px-20"
           data-aos="fade-up"
           data-aos-delay="1000"
         >
