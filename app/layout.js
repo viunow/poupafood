@@ -6,18 +6,20 @@ import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/components/ScrollToTop";
 import ogImage from "../public/og.png";
 
+const URL = "https://poupafood.com.br";
+
 export async function generateMetadata() {
   return {
     title: "PoupaFood",
     description: "Valoriza o Seu Negócio, Respeita o Nosso Planeta.",
     alternates: {
-      canonical: process.env.SITE_URL,
+      canonical: URL,
     },
-    metadataBase: new URL(process.env.SITE_URL),
+    metadataBase: new URL(URL),
     openGraph: {
       title: "PoupaFood",
       description: "Valoriza o Seu Negócio, Respeita o Nosso Planeta.",
-      url: process.env.SITE_URL,
+      url: URL,
       siteName: "PoupaFood",
       images: ogImage.src,
       type: "website",
