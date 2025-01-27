@@ -38,7 +38,7 @@ const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body className={`${openSans.variable} antialiased`}>
